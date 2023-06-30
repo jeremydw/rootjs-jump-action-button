@@ -9,6 +9,7 @@
   justify-content: center;
   align-items: center;
   pointer-events: none;
+  transition: opacity 300ms ease, visibility 300ms ease;
 }
 
 .frame--visible {
@@ -18,4 +19,20 @@
 
 .container {
   pointer-events: all;
+  transform: translateY(100%);
+  transition: transform 300ms ease;
+}
+
+.container--visible {
+  transform: translateY(0);
+}
+
+.button {
+  padding: 10px 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: black;
+  display: inline-flex;
+  text-decoration: none;
+  background: #dedede;
 }
