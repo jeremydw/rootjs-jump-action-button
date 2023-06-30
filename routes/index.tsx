@@ -8,7 +8,8 @@ export function Page() {
         <h1>Hero Module</h1>
         <p>
           Jump action button only appears if the hero module's bottom is not
-          scrolled past the viewport bottom.
+          scrolled past the viewport bottom. To test, ensure the viewport is
+          shorter than 680px.
         </p>
         <jump-action-button href="#next">Explore more</jump-action-button>
       </div>
