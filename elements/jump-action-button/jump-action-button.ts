@@ -36,7 +36,6 @@ export class JumpActionButton extends LitElement {
 
   private updateVisibility() {
     this.visible = this.testVisibility();
-    console.log('foo');
   }
 
   /**
