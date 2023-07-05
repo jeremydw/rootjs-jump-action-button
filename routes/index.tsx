@@ -12,6 +12,10 @@ export function Page() {
           shorter than 680px.
         </p>
         <jump-action-button href="#next">Explore more</jump-action-button>
+        <action-bar>
+          <button>Button 1</button>
+          <button>Button 2</button>
+        </action-bar>
       </div>
       <div
         style="height: 1000px; border: 1px dotted green; padding: 20px; box-sizing: border-box;"

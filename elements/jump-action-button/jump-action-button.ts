@@ -35,7 +35,12 @@ export class JumpActionButton extends LitElement {
   }
 
   private updateVisibility() {
-    this.visible = this.testVisibility();
+    const isVisible = this.testVisibility();
+    if (isVisible !== this.visible) {
+      this.visible = isVisible;
+      // Dispatch a change event when the visibility changes.
+      this.dispatchEvent(new Event('change'));
+    }
   }
 
   /**
