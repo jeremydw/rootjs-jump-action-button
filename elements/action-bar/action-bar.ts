@@ -28,6 +28,8 @@ export class ActionBar extends LitElement {
     if (!actionButton) {
       return;
     }
+    // Set initial state.
+    this.visible = !actionButton.visible;
     actionButton.addEventListener('change', () => {
       // Make the action bar visible only if the action button is not visible.
       this.visible = !actionButton.visible;
